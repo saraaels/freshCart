@@ -5,10 +5,10 @@ import axios from 'axios';
 import { useQuery } from 'react-query';
 export default function Brands() {
   function getAllBrands() {
-    return axios.get('https://ecommerce.routemisr.com/api/v1/brands')
+    return axios.get('https://route-ecommerce.onrender.com/api/v1/subcategories')
   }
   let { isLoading, data, isError, isFetching, error } = useQuery("allBrands", getAllBrands, {
-    cacheTime: 3000
+
 
   })
   console.log(data);
@@ -23,13 +23,12 @@ export default function Brands() {
       <div className="container">
 
         {isLoading == false ? <div className="row ">
-          {data?.data.data.map((brand) => <div className="col-md-3 py-2   " key={brand._id}>
+          {data?.data.data.map((brand) => <div className="col-md-3 py-2" key={brand._id}>
 
-            <div className="card  ">
+            <div className="card   ">
     
-              <img src={brand.image
-              } alt="" height={150} className='w-75  p-2' />
-              <p className='text-main ps-4'>{brand.name}</p>
+            
+              <p className='text-main text-center p-4'>{brand.name}</p>
 
 
 

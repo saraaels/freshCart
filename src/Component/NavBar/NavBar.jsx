@@ -36,7 +36,7 @@ export default function NavBar() {
             <Link className="nav-link " aria-current="" to='/categories' >categories</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link " aria-current="" to='brands' >Brands</Link>
+            <Link className="nav-link " aria-current="" to='/SubCategories' >SubCategories</Link>
           </li>
         
           <li className="nav-item">
@@ -61,7 +61,7 @@ export default function NavBar() {
            <i className='fa-brands fa-linkedin pe-2'></i>
           </li>
           
-          {userToken!==null ?<>
+          {userToken!==null?<>
             <li className="nav-item">
           <Link className="nav-link " aria-current="" to='/wishList' ><i className='fa fa-heart active'></i></Link>
         </li>

@@ -37,7 +37,7 @@ const querClient=new QueryClient();
         { path: 'profile', element: <ProtectedRoute><Profile /></ProtectedRoute> },
         { path: "products", element: <ProtectedRoute><Products/></ProtectedRoute> },
         { path: "categories", element: <ProtectedRoute><Categories/></ProtectedRoute> },
-        { path: "brands", element: <ProtectedRoute><Brands/></ProtectedRoute> },
+        { path: "SubCategories", element: <ProtectedRoute><Brands/></ProtectedRoute> },
         { path: "wishList", element: <ProtectedRoute><WishList/></ProtectedRoute> },
         { path: "allorders", element: <ProtectedRoute><Orders/></ProtectedRoute> },
         { path: "UserOrder", element: <ProtectedRoute><UserOrder/></ProtectedRoute> },
